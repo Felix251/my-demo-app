@@ -1,6 +1,11 @@
 pipeline {
   agent any
   stages {
+    stage('Checkout') {
+            steps {
+                sh 'node -v'
+            }
+        }
     stage('Install dependencies') {
             steps {
                 sh 'npm install'
