@@ -4,7 +4,7 @@ pipeline {
     stage("Build"){
       steps {
         echo "Building the application....."
-        echi "app build...."
+        echo "app build...."
       }
     }
     stage("Test"){
