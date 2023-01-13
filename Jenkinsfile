@@ -1,9 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('Checkout') {
+    stage(' dependencies') {
             steps {
-                sh 'node -v'
+                sh 'node -e "console.log(require(\'child_process\').execSync(\'npm -v\').toString())"'
+                sh 'node -e "console.log(require(\'child_process\').execSync(\'npm install\').toString())"'
             }
         }
     stage('Install dependencies') {
