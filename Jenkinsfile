@@ -5,12 +5,6 @@ pipeline {
                 sh 'npm install'
             }
         }
-//         stage('Build') {
-//             steps {
-//                 sh 'npm run build'
-//             }
-//         }
-
     stage("Deploy"){
       steps {
         echo "Deploying the application....."
