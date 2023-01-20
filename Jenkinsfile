@@ -1,5 +1,4 @@
-pipeline {
-  stages {
+node {
 //     stage('Install dependencies') {
 //             steps {
 //                 sh 'npm install'
